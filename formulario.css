@@ -1,0 +1,97 @@
+body{
+    background-image: linear-gradient(to right, rgb(20, 147, 220), rgb(17, 54, 71));
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.box{
+    color: white;
+    position: absolute;
+    top:55%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    border-radius:15px;
+    width: 30%;
+}
+
+fieldset{
+    border: 3px solid dodgerblue;
+}
+
+legend{
+    border: 1px solid dodgerblue;
+    padding: 10px;
+    text-align: center;
+    background-color: dodgerblue;
+    border-radius: 8px;
+}
+
+.inputBox{
+    position: relative;
+}
+
+.inputUser{
+    background: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 2px;
+}
+
+.labelInput{/*Animação das labels - nessa parte, as labels irão se encaixar dentro dos inputs*/
+    position: absolute;/*Vai ocupar apenas o elemento dela mesma*/
+    top: 0px;
+    left: 0px;
+    pointer-events: none;/*qualquer lugar que eu clicar dentro do input, ele vai executar a ação*/
+    transition: 5px;/*transição - para a criação de efeitos de animação personalizada*/
+}
+/*quando clicar no input eu quero que a label vai para cima do input - por isso a ação é no input*/
+
+.inputUser:focus ~ .labelInput,/*Executar uma açãona nossa label*/
+.inputUser:valid ~ .labelInput{/*quando o input tiver válido, eu quero que ele execute essa ação para a label - a informação irá permanecer no input, senão irá ficar por cima*/
+    top:-20px;
+    font-size: 20px;
+    color: dodgerblue;
+}
+
+#data_nascimento{
+    border:none;
+    padding: 8px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 15px;
+}
+
+#enviar{
+    background: linear-gradient(to right, rgb(0, 92, 192), rgb(90, 20, 220));
+    width: 100%;
+    border: none;/*tirar borda do botão enviar*/
+    padding: 15px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;/*quando passar o mouse por cima do botão enviar, muda o cursor*/
+    border-radius: 10px;
+}
+
+#enviar:hover{
+    background: linear-gradient(to right, rgb(0, 92, 192), rgb(90, 20, 150))
+    /*quando passar o mouse por cima do botão enviar, irá aplicar um pouco mais desse azul*/
+}
+
+
+/*=========================================================================================================================================================================*/
+footer{
+    position:absolute;
+    bottom:0;
+}
+.friv{
+    text-decoration: none;
+    color: black;
+}
+
+.friv:hover{
+    opacity: 0.6;
+}
