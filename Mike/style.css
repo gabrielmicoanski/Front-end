@@ -1,6 +1,8 @@
 body{
     background-color: rgb(192, 192, 192);
     margin: 0;
+    font-family: 'Code', Helvetica, sans-serif;
+    font-style: italic;
 }
 
 header{
@@ -9,6 +11,13 @@ header{
     height: 50px;
     top: 0;
     left: 0;
+    display: flex;
+}
+
+main{
+    background-color: rgb(85, 85, 85);
+    width: 100%;
+    height: 3000px;
 }
 
 nav{
@@ -32,7 +41,8 @@ footer{
 
 .pags{
     text-align: center;
-    margin-top: 15px;
+    margin-top: 14px;
+    font-size: 19px;
 }
 
 #inicio{
@@ -44,12 +54,37 @@ footer{
     color:rgb(255, 255, 255);
     text-decoration:none;
 }
-
-.logo{
-    background-color: white;
-    width: 100%;
-    height: 900px;
+.ft_principal{
+    margin: 0;
+    border-bottom: 50px solid rgb(30, 255, 0);
 }
+
+@font-face {
+    font-family: 'Code';
+    src: url(CODEbold.otf) format('opentype')
+}
+
+
+.text_inicial{
+    margin-left: 20px;
+    width: 800px;
+    height: 600px;
+    font-size: 50px;
+    border: 2px solid black;
+}
+
+fieldset{
+    
+    width: 500px;
+    height: 500px;
+    margin-right: 0;
+
+}
+
+.formulario{
+    display:inline;
+}
+
 /*Hover-------------------------------------------*/
 #inicio:hover{
     opacity: 0.6;
