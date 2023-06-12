@@ -1,9 +1,10 @@
 body{
     padding:0;
     margin: 0;
+    font-family:'azonix';
 }
 header{
-    background: linear-gradient(to right, rgb(0, 0, 0), rgb(255, 139, 239));
+    background:linear-gradient(to right, rgb(255, 255, 255), rgb(66, 66, 66));
     padding: 20px;
     border: 1px solid rgb(190, 190, 190);
 }
@@ -20,12 +21,12 @@ header{
     left: 50%;
     transform: translate(-30%, -15%);
     font-size: 35px;
-    font-family: 'KG Blank Space Solid';
+    font-family: 'azonix';
 }
 
 @font-face {
-    font-family: 'KGBlankSpaceSolid';
-    src: url(KGBlankSpaceSolid.ttf) format('opentype');
+    font-family: 'azonix';
+    src: url(Azonix.otf) format('opentype');
 }
 
 main{
@@ -67,23 +68,15 @@ footer {
 .imgf { display: flex; justify-content: center; }
 .logof {width: 115px; height: 115px; border-radius: 22px; margin-top: 15px;}
 
-button{
+.cadbutton{
+    width: 100px;
+    height: 50px;
+    font-family:'azonix';
     color: rgb(255, 255, 255);
-    background-color: rgb(250, 64, 226);
+    background-color: rgb(0, 0, 0);
     margin-bottom: 40px;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
-.navBar,#Login, #Home, #Loja{
-    text-align: right;
-    text-decoration: underline rgb(88, 70, 70);
-    color: rgb(255, 64, 226);
-    font-size: 30px;
-    margin-right: 10px;
-}
 
 /*hover===========================================*/
-
-#Login:hover, #Home:hover, #Loja:hover{
-    opacity: 0.2;
-}
